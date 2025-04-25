@@ -86,7 +86,7 @@ html, body {
     color: white;
     padding: 2rem;
     position: absolute;
-    top: 57rem;
+    top: 64rem;
     left: 50%;
     transform: translate(-50%, -50%);
     width:100%;
@@ -130,7 +130,7 @@ html, body {
     .rules {
         width: 97%;
         padding: 1rem;
-        top: 52rem;
+        top: 58rem;
     }
 
     .toggle-rules-button {
