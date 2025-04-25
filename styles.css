@@ -1,0 +1,146 @@
+:root {
+    --container-padding: 2rem;
+    --box-size: 18rem;
+    --font-base: 1rem;
+    --font-large: 1.5rem;
+    --font-title: 2rem;
+    --button-padding: 1rem 3rem;
+    --rules-width: 80%;
+    --rules-max-width: 40rem;
+}
+
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 75rem;
+    padding: var(--container-padding);
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botão de regras */
+.toggle-rules-button {
+    background-color: #444;
+    color: white;
+    padding: var(--button-padding);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: -20.0vh; /* Agora usa altura relativa à tela */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-size: var(--font-large);
+}
+
+.toggle-rules-button:hover {
+    background-color: #555;
+}
+
+/* Caixa de Poder */
+.power-box {
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: #f39c12;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+    margin-top: 3rem;
+    font-size: var(--font-title);
+}
+
+.power-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+#power-text {
+    font-size: 1.7rem;
+}
+
+/* Regras */
+.rules {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 57rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    max-width: var(--rules-max-width);
+    display: none;
+    border-radius: 0.6rem;
+    z-index: 10;
+    text-align: left;
+}
+
+.rules.show {
+    display: block;
+}
+
+.rules .rule {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #555;
+}
+
+.rules .rule strong {
+    font-size: 1.1rem;
+    color: #ffd700;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.rules .rule p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 30rem) {
+    :root {
+        --box-size: 12rem;
+        --font-large: 1.1rem;
+    }
+
+    .rules {
+        width: 97%;
+        padding: 1rem;
+        top: 52rem;
+    }
+
+    .toggle-rules-button {
+        top: -25.0vh;
+        
+    }
+
+    .power-box {
+        width: 300px;
+        height: 300px;
+
+    }
+}
