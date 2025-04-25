@@ -14,6 +14,7 @@ function sortPower() {
         "Meta Oculta: 5 check-ins na semana = +1 ponto extra.",
         "Treino Premiado: sorteie 1 a 3, faça check-ins seguidos e ganhe pontos.",
         "Bug no App: O jogador que invocou esta carta escolhe 2 dias da próxima semana nos quais os check-ins dos outros jogadores não contarão ponto."
+    
     ];
 
     const powerNumber = Math.floor(Math.random() * powers.length);
