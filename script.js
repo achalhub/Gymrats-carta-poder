@@ -20,15 +20,15 @@ function sortPower() {
     // Defina seus poderes com os respectivos pesos
     // Quanto maior o peso, maior a chance de ser sorteado
     const powersWithWeights = [
-        { text: "Replay do Treino: repita 1 ponto da semana passada.", weight: 1 }, 
-        { text: "Modo Lendário: só pontua com check-in criativo na próxima semana.", weight: 1 }, 
-        { text: "Acordei no Hype: check-in até 8h vale 2 pontos.", weight: 1 }, 
-        { text: "Treino da Madrugada: check-in entre 0h-6h vale +1 ponto.", weight: 1 },
-        { text: "Treino em Dobro: 2 check-ins em um dia, 2 pontos.", weight: 1 },
-        { text: "Peso da Coroa: um check-in da próxima semana não contará ponto.", weight: 4 }, 
-        { text: "Meta Oculta: 5 check-ins na semana = +1 ponto extra.", weight: 1 },
-        { text: "Treino Premiado: sorteie 1 a 3, faça check-ins seguidos e ganhe pontos.", weight: 1 },
-        { text: "Bug no App: O jogador que invocou esta carta escolhe 2 dias da próxima semana nos quais os check-ins dos outros jogadores não contarão ponto.", weight: 4 } 
+        { text: "Replay do Treino: repita 1 ponto da semana passada.", weight: 0 }, 
+        { text: "Modo Lendário: só pontua com check-in criativo na próxima semana.", weight: 0 }, 
+        { text: "Acordei no Hype: check-in até 8h vale 2 pontos.", weight: 0 }, 
+        { text: "Treino da Madrugada: check-in entre 0h-6h vale +1 ponto.", weight: 0 },
+        { text: "Treino em Dobro: 2 check-ins em um dia, 2 pontos.", weight: 0 },
+        { text: "Peso da Coroa: um check-in da próxima semana não contará ponto.", weight: 0 }, 
+        { text: "Meta Oculta: 5 check-ins na semana = +1 ponto extra.", weight: 0 },
+        { text: "Treino Premiado: sorteie 1 a 3, faça check-ins seguidos e ganhe pontos.", weight: 0 },
+        { text: "Bug no App: O jogador que invocou esta carta escolhe 2 dias da próxima semana nos quais os check-ins dos outros jogadores não contarão ponto.", weight: 1 } 
     ];
 
     // Calcula o peso total
