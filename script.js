@@ -27,8 +27,8 @@ function sortPower() {
         { text: "Treino em Dobro: 2 check-ins em um dia, 2 pontos.", weight: 0 },
         { text: "Peso da Coroa: um check-in da próxima semana não contará ponto.", weight: 0 }, 
         { text: "Meta Oculta: 5 check-ins na semana = +1 ponto extra.", weight: 0 },
-        { text: "Treino Premiado: sorteie 1 a 3, faça check-ins seguidos e ganhe pontos.", weight: 0 },
-        { text: "Bug no App: O jogador que invocou esta carta escolhe 2 dias da próxima semana nos quais os check-ins dos outros jogadores não contarão ponto.", weight: 1 } 
+        { text: "Treino Premiado: sorteie 2 a 3, faça check-ins seguidos e ganhe pontos.", weight: 1 },
+        { text: "Bug no App: O jogador que invocou esta carta escolhe 2 dias da próxima semana nos quais os check-ins dos outros jogadores não contarão ponto.", weight: 0 } 
     ];
 
     // Calcula o peso total
